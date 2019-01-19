@@ -27,3 +27,9 @@ find_library(LIBEVENT2 event)
 
 add_executable(http http-server.c)
 target_link_libraries(http ${LIBEVENT2})
+
+add_executable(web40 web40.c)
+target_link_libraries(web40 ${LIBEVENT2})
+
+add_executable(http40 http40.cpp)
+target_link_libraries(http40 ${LIBEVENT2})

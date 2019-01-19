@@ -1,6 +1,8 @@
 #include <iostream>
 #include "learn.h"
 
+using namespace std;
+
 int main(int argc, char *argv[]){
   int x1 = 10;
   int x2 = 20;
