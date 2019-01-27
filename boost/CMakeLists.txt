@@ -13,8 +13,13 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 # set(CMAKE_BUILD_TYPE RelWithDebInfo)
 set(CMAKE_BUILD_TYPE Release)
 
-# add_executable(hr_sum_array hr_sum_array.cpp)
 add_executable(lambda lambda.cpp)
+
+add_executable(regex regex.cpp)
+set(CUSTOM_PATH_LIB_PREFIX ${CMAKE_CURRENT_SOURCE_DIR}/../../boost/lib)
+# target_link_libraries(regex debug ${CMAKE_CURRENT_SOURCE_DIR}/../../boost/lib/libboost_regex-vc141-mt-gd-x32-1_69.lib optimized ${CMAKE_CURRENT_SOURCE_DIR}/../../boost/lib/libboost_regex-vc141-mt-x32-1_69.lib)
+target_link_libraries(regex debug ${CUSTOM_PATH_LIB_PREFIX}/libboost_regex-vc141-mt-gd-x32-1_69.lib optimized ${CUSTOM_PATH_LIB_PREFIX}/libboost_regex-vc141-mt-x32-1_69.lib)
+
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../../boost/include/boost-1_69)
 link_libraries(${CMAKE_CURRENT_SOURCE_DIR}/../../boost/lib)
