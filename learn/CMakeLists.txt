@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
-project(app)
+
+project(app CXX C)
 
 # Compiler configuration
 if (CMAKE_VERSION VERSION_LESS "3.1")
