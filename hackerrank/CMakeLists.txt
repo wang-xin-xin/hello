@@ -52,6 +52,9 @@ add_executable(class_abstract class_abstract.cpp)
 
 add_executable(timer timer.cpp)
 
+add_executable(stringstream stringstream.cpp)
+add_executable(tag_parser tag_parser.cpp)
+
 #target_include_directories(app PRIVATE ${OPENGL_INCLUDE_DIR})
 #target_link_libraries(app ${OPENGL_gl_LIBRARY} -static)
 
