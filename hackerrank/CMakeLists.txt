@@ -47,6 +47,9 @@ add_executable(getline_cin getline_cin.cpp)
 
 add_executable(map map.cpp)
 
+add_executable(class_inheritance class_inheritance.cpp)
+add_executable(class_abstract class_abstract.cpp)
+
 add_executable(timer timer.cpp)
 
 #target_include_directories(app PRIVATE ${OPENGL_INCLUDE_DIR})
