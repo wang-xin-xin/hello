@@ -24,7 +24,6 @@ set(CMAKE_BUILD_TYPE Debug)
 # set(CMAKE_BUILD_TYPE RelWithDebInfo)
 # set(CMAKE_BUILD_TYPE Release)
 
-
 #find_package(glfw3 3.2 REQUIRED)
 #find_package(OpenGL REQUIRED)
 
@@ -36,13 +35,17 @@ set_property(TARGET app PROPERTY CXX_STANDARD 11)
 
 target_link_libraries(app learn)
 
-add_executable(arrays arrays.cpp)
-add_executable(map map.cpp)
+add_executable(array array.cpp)
+add_executable(array_more array_more.cpp)
+add_executable(array2d array2d.cpp)
+add_executable(array_foreach array_foreach.cpp)
+add_executable(array_vector array_vector.cpp)
 
-add_executable(hr_array_dynamic hr_array_dynamic.cpp)
-add_executable(hr_getline hr_getline.cpp)
-add_executable(hr_sum_array hr_sum_array.cpp)
-add_executable(hr_vector hr_vector.cpp)
+add_executable(binary_count binary_count.cpp)
+
+add_executable(getline_cin getline_cin.cpp)
+
+add_executable(map map.cpp)
 
 add_executable(timer timer.cpp)
 
