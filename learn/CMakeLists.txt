@@ -37,7 +37,6 @@ set_property(TARGET app PROPERTY CXX_STANDARD 11)
 
 target_link_libraries(app learn)
 
-add_executable(hr_sum_array hr_sum_array.cpp)
 add_executable(timer timer.cpp)
 
 #target_include_directories(app PRIVATE ${OPENGL_INCLUDE_DIR})
