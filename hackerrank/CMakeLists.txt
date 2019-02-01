@@ -40,6 +40,7 @@ add_executable(array_more array_more.cpp)
 add_executable(array2d array2d.cpp)
 add_executable(array_foreach array_foreach.cpp)
 add_executable(array_vector array_vector.cpp)
+add_executable(array_lower_bound array_lower_bound.cpp)
 
 add_executable(binary_count binary_count.cpp)
 
@@ -50,6 +51,9 @@ add_executable(map map.cpp)
 add_executable(class_inheritance class_inheritance.cpp)
 add_executable(class_abstract class_abstract.cpp)
 add_executable(class_object class_object.cpp)
+add_executable(class_operator class_operator.cpp)
+
+add_executable(linked_list linked_list.cpp)
 
 add_executable(timer timer.cpp)
 
